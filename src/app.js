@@ -35,12 +35,16 @@ window.onload = function() {
     // top.innerHTML = palos[indexPalo];
     // number.innerHTML = numeros[indexNumero];
     // bottom.innerHTML = palos[indexPalo];
-
+    let arr = [];
     for (let i = 1; i <= cantidadCartas; i++) {
       //GENERA POR CADA VUELTA UNA NUEVA POSICION RAMDOM DE PALO Y DE NUMERO
       //GENERAMOS LAS POSICIONES RAMDOM
       let indexPalo = Math.floor(Math.random() * palos.length);
       let indexNumero = Math.floor(Math.random() * numeros.length);
+      console.log(palos[indexPalo], numeros[indexNumero]);
+
+      arr.push({ palos: palos[indexPalo], numeros: numeros[indexNumero] });
+      console.log(arr);
 
       if (palos[indexPalo] === "♥" || palos[indexPalo] === "♦") {
         document.body.innerHTML += `<div class="card" style="width: 18rem;">
@@ -60,7 +64,9 @@ window.onload = function() {
       </div>`;
       }
     }
+    return arr;
   }
-
   ramdomCard();
+
+  let botonOrdenar = document.getElementById("botonOrdenar");
 };
