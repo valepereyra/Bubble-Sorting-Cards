@@ -19,9 +19,9 @@ window.onload = function() {
       document.getElementById(
         "card"
       ).innerHTML += `<div class="card d-flex p-1 m-3 border border-dark" style="width: 190px; height: 15rem; justify-content: space-between; border-radius: 15px;  font-size: 40px; margin: 5px;">
-          <div class="topIcon text-start text-danger ms-2">${palos[indexPalo]}</div>
+          <div class="top text-start text-danger ms-2">${palos[indexPalo]}</div>
           <div class="number text-center">${numeros[indexNumero]}</div>
-          <div class="bottomIcon text-danger mx-2" style="transform:rotate(180deg);">${palos[indexPalo]}</div>
+          <div class="bottom text-danger mx-2" style="transform:rotate(180deg);">${palos[indexPalo]}</div>
           </div>`;
       arrCard.push({
         palo: palos[indexPalo],
@@ -31,9 +31,9 @@ window.onload = function() {
       document.getElementById(
         "card"
       ).innerHTML += `<div class="card d-flex p-1 m-3 border border-dark" style="width: 190px; height: 15rem; justify-content: space-between; border-radius: 15px;  font-size: 40px; margin: 5px;">
-              <div class="topIcon text-start ms-2" >${palos[indexPalo]}</div>
+              <div class="top text-start ms-2" >${palos[indexPalo]}</div>
               <div class="number text-center">${numeros[indexNumero]}</div>
-              <div class="bottomIcon mx-2" style="transform:rotate(180deg);">${palos[indexPalo]}</div
+              <div class="bottom mx-2" style="transform:rotate(180deg);">${palos[indexPalo]}</div
           </div>`;
       arrCard.push({
         palo: palos[indexPalo],
@@ -53,18 +53,18 @@ window.onload = function() {
         document.getElementById(
           "card"
         ).innerHTML += `<div class="card d-flex p-1 m-3 border border-dark" style="width: 190px; height: 15rem; justify-content: space-between; border-radius: 15px;  font-size: 40px; margin: 5px;">
-          <div class="topIcon text-start text-danger ms-2">${indexPalo}</div>
+          <div class="top text-start text-danger ms-2">${indexPalo}</div>
           <div class="number text-center">${indexNumero}</div>
-          <div class="bottomIcon text-danger mx-2" style="transform:rotate(180deg);">${indexPalo}</div>
+          <div class="bottom text-danger mx-2" style="transform:rotate(180deg);">${indexPalo}</div>
       </div>
   </div>`;
       } else {
         document.getElementById(
           "card"
         ).innerHTML += `<di class="card d-flex p-1 m-3 border border-dark" style="width: 190px; height: 15rem; justify-content: space-between; border-radius: 15px;  font-size: 40px; margin: 5px;">
-          <div class="topIcon text-start ms-2">${indexPalo}</div>
+          <div class="top text-start ms-2">${indexPalo}</div>
           <div class="number text-center">${indexNumero}</div>
-          <div class="bottomIcon mx-2" style="transform:rotate(180deg);>${indexPalo}</div>
+          <div class="bottom mx-2" style="transform:rotate(180deg);>${indexPalo}</div>
         </div>`;
       }
     }
